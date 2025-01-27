@@ -1,0 +1,34 @@
+# Robert Lynn Homes Robots.txt
+User-agent: *
+Allow: /
+
+# Main sitemap
+Sitemap: https://robertlynnhomes.com/sitemap.xml
+
+# Allow crawling of content
+Allow: /*.html
+Allow: /*.css
+Allow: /*.js
+Allow: /images/
+Allow: /pages/
+
+# Crawl-delay for better server performance
+Crawl-delay: 10
+
+# Disallow admin and system directories
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /private/
+Disallow: /.git/
+
+# Block common bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: / 
